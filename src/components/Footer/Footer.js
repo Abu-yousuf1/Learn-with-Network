@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="footer-container text-light ">
             <Container className="footer-position row">
                 <div className="col-lg-6 text-center py-5">
-                    <h1 className="pb-3">Learn With Programming-hero</h1>
+                    <h1 className="pb-5">Learn With Programming-hero</h1>
                     <span className="text-secondary fs-2 ">{facebook} </span>
                     <span className="text-secondary fs-2 mx-1">{twitter}</span>
                     <span className="text-secondary fs-2 mx-1">{youtube}</span>
