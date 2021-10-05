@@ -1,13 +1,18 @@
 import React from 'react';
 import { Card, Col, Container } from 'react-bootstrap';
 import Rating from 'react-rating';
+import { useHistory } from 'react-router';
 import './home.css'
 
 const HomeDisplay = (props) => {
     const { name, description, image, icon, price } = props.service
+    const history = useHistory()
+    const handleClick = () => {
+        history.push("/service")
+    }
     return (
         <Col>
-            <Card>
+            <Card onClick={handleClick}>
                 <Card.Img variant="top" className="image" src={image} />
                 <Card.Body>
                     <Card.Title >{name}</Card.Title>
@@ -18,10 +23,10 @@ const HomeDisplay = (props) => {
                         <Rating
                             initialRating={icon}
                             readonly
-                            emptySymbol="fa fa-star-o fa-2x"
-                            fullSymbol="fa fa-star fa-2x"
+                            emptySymbol="fa fa-star-o fa-2x fs-4"
+                            fullSymbol="fa fa-star fa-2x fs-4"
                         />
-                        <h5 className="ps-3">Price: $ {price}</h5>
+                        <h5 className="ps-5">Price: $ {price}</h5>
                     </div>
                 </Card.Body>
             </Card>

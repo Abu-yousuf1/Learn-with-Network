@@ -57,7 +57,7 @@
     },
     {
         "id": 8,
-        "name": "Dart Language by Google full Coures",
+        "name": "Dart Language full Coures",
         "price": 200,
         "description": "Mature and complete async-await for user interfaces containing event-driven code, paired with isolate-based concurrency",
         "image": "https://dart.dev/assets/shared/dart-logo-for-shares.png?2",

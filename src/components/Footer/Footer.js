@@ -29,6 +29,7 @@ const Footer = () => {
                 <div className="col-lg-3 py-5 ">
                     <Link className="text-secondary fs-4 fw-bold text-decoration-none py-1" to="/home">Home</Link>
                     <Link className="text-secondary fs-4 fw-bold text-decoration-none py-1 d-block" to="/service">Service</Link>
+                    <Link className="text-secondary fs-4 fw-bold text-decoration-none py-1 d-block" to="/cart">Cart</Link>
                     <Link className="text-secondary fs-4 fw-bold text-decoration-none py-1 d-block" to="/contact">Contact</Link>
                     <Link className="text-secondary fs-4 fw-bold text-decoration-none py-1 d-block" to="/about">About</Link>
                 </div>

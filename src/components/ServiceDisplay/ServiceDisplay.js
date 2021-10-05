@@ -4,7 +4,7 @@ import Rating from 'react-rating';
 
 const ServiceDisplay = (props) => {
 
-    const { name, description, image, icon, price } = props.service
+    const { name, description, image, icon, price, id } = props.service
     return (
         <Col>
             <Card>
@@ -18,11 +18,12 @@ const ServiceDisplay = (props) => {
                         <Rating
                             initialRating={icon}
                             readonly
-                            emptySymbol="fa fa-star-o fa-2x"
-                            fullSymbol="fa fa-star fa-2x"
+                            emptySymbol="fa fa-star-o fa-2x fs-4"
+                            fullSymbol="fa fa-star fa-2x fs-4"
                         />
-                        <h5 className="ps-3">Price: $ {price}</h5>
+                        <h5 className="ps-5">Price: $ {price}</h5>
                     </div>
+                    <button className="btn btn-success w-100 mt-3" onClick={() => props.handleCart(id)}>Add to Cart</button>
                 </Card.Body>
             </Card>
         </Col>
